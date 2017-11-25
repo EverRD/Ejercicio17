@@ -72,6 +72,42 @@ public class AlgoritimosDeOrdenamiento {
        
        mostrarArreglo (arreglo);
    }
+   //Metodo quick
+   oublic void quick(int[] arreglo,int primero,int ultimo){
+       int i,j,pivote,auxiliar;
+       i=primero;
+       j=ultimo;
+       pivote=arreglo[primero+iultimo])/2];
+       do{
+           while(arreglo[i]<pivote)
+               i++;
+            }
+          while(arreglo[j>pivote]){
+            j--;
+   
+            }
+         //aqui hacemos el intercambio
+          if(i<=j){
+              auxiliar=arreglo[i];
+              arreglo[i]=arreglo[j];
+              arreglo[j]=auxiliar;
+              i++;
+              j--;
+              
+          }
+        }while(i<=j);
+        if(primero<j){
+       quick(arreglo, primero, j);
+       
+     }
+        if(ultimo<j){
+       quick(arreglo, i, ultimo);
+               
+       
+   }
+       
+       mostrarArreglo(arreglo);
+   }
    
 //Mostrar los datos del vector 
    public void mostrarArreglo()(int [] arreglo){
