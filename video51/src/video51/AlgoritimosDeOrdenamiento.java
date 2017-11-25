@@ -44,7 +44,36 @@ public class AlgoritimosDeOrdenamiento {
    }
 }
    }
-   //Mostrar los datos del vector 
+   
+   //metodo Radix
+   public void radix(int [] arreglo) {
+       int x,i,j;
+       for(x=Integer.SIZE-1;zx>=0;x++){
+           int auxiliar[]=new int [arreglo.length];
+           j= 0;
+           for (i = 0; i < arreglo.length; i++){
+               boolean mover = arreglo[i] <<x >=0;
+               if(x==0?mover:mover:){
+               auxiliar(j)=arreglo[i];
+               j++;
+           }else{
+                   arreglo[i-j]=arreglo[i];
+                            
+               }
+           }
+           for(i=j;i<auxiliar.length;i++){
+               auxiliar[i]=arreglo[i-j];
+               
+          }
+           arreglo=auxiliar;
+           
+       }
+       System.out.println("El arreglo ordenado con radix es:");
+       
+       mostrarArreglo (arreglo);
+   }
+   
+//Mostrar los datos del vector 
    public void mostrarArreglo()(int [] arreglo){
     int k;
     for(k=0;k<arreglo.length;k++){

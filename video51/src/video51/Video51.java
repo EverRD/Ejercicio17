@@ -16,22 +16,28 @@ public class Video51 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        AlgoritmosDeOrdenamiento ordenar=new AlgoritmosDeOrdenamiento();
+        /*AlgoritmosDeOrdenamiento ordenar=new AlgoritmosDeOrdenamiento();
         int vector1[]={5,6,3,44,22,1);
         int vector1[]={55,4,43,44,2,10);
-        System.out.println("Arreglo Orfiginal");
+        System.out.println("Arreglo Original");
         ordenar.MostrarArreglo(vector1);
          System.out.println("Arreglo Ordenado con burbuja1");
          ordenar.burbuja1(vector1);
          ordenar.mostrarArreglo(vector1);
-          System.out.println("Arreglo Orfiginal");
+          System.out.println("Arreglo Original");
         ordenar.MostrarArreglo(vector2);
          System.out.println("Arreglo Ordenado con burbuja2");
          ordenar.burbuja1(vector2);
-         ordenar.mostrarArreglo(vector2);
+         ordenar.mostrarArreglo(vector2);*/
+        ordenar.mostratArreglo(vector2);
+          System.out.println("Arreglo Original");
+          ordenar.MostrarArreglo(vector2);
+          ordenar.radix(vector2);
     }
-       
-
-    }
-    
 }
+}
+
+
+    
+    
+
