@@ -109,6 +109,29 @@ public class AlgoritimosDeOrdenamiento {
        mostrarArreglo(arreglo);
    }
    
+  //Mtodo Para Insercion
+public void insercion (int [] arreglo, int n}{
+int i,j,auxiliar;
+for(i=1;i<n;i++){
+auxiliar=arreglo[i];
+j=i-1;
+while(j>=0 && rreglo[j>auxiliar]){
+arreglo[j+1]=arreglo[j];
+j=j-1;
+
+      }
+arreglo[j+1]=auxiliar;
+    }
+     System.out.println("arreglo orenado por insercion");
+     mostrarArreglo(arreglo);
+
+
+}
+
+
+
+
+
 //Mostrar los datos del vector 
    public void mostrarArreglo()(int [] arreglo){
     int k;
