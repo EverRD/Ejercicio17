@@ -47,7 +47,6 @@ public class Video51 {
            ordenar.insercion()vectorcito, 1+1);
           */
                //System.out.println("arreglo original");
-               //ordenar.mostrarArreglo(vector3);
                //ordenar.shell(vector3);
                 /*System.out.println("Arreglo vector1 original");
                 ordenar.mostrarArreglo(vector1);
