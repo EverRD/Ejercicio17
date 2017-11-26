@@ -177,6 +177,58 @@ arregloC[k] =arregloA[i];
 
 }
 
+//metodo mezclaDirecta 
+public int[]mezclaDirecta (int[]arreglo){
+int i, j, k;
+if (arreglo.length > 1){
+int nElementosIzq = arreglo.length / 2;
+int nEelementosDer = arreglo.length -nElementosIzq;
+int arregloIzq[] = new int[nElementosIzq];
+int arregloDer[] = new int[nElementosDer];
+//copiando los elementos de parte primera al arregloIzq
+for(i=0;i<nElementosIzq;i++){
+arregloIzq[i]=arreglo[i];
+     }
+       //copiando los elementos de parte segunda al arregloDer
+        for (i = nElementosIzq; i < nElementosIzq + nElementosDer; i++ ){
+            arregloDer[i - nElementosIzq] = arreglo[i];
+
+   }
+     //Recursividad
+     arregloIzq = mezclaDirecta(arregloIzq);
+    arregloDer = mezclaDirecta (arregloDer);
+     i = o;
+     j = o;
+     k = o;
+      while (arregloIzq.length!= j && arregloDer.length != k){
+      if (arregloIzq[j] < arregloDer[k]){
+      arreglo[i] = arregloIzq[j];
+      i++;
+      j++;
+     }else  {
+      arreglo[i] = arregloDer[k];
+     i++;
+     k++;
+
+      }
+}
+   //Arreglo Final
+    while (arregloIzq.length!= j) {
+    arreglo[i] = arregloIzq[j];
+    i++;
+     j++;
+}
+  while (arregloIzq.length!= k) {
+  arreglo[i] = arregloIzq[k];
+    i++;
+     k++;
+}
+//fin  del if 
+return areglo;
+}
+
+
+
 
 //Mostrar los datos del vector 
    public void mostrarArreglo()(int [] arreglo){

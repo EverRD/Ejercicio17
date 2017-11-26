@@ -18,7 +18,7 @@ public class Video51 {
         // TODO code application logic here
         AlgoritmosDeOrdenamiento ordenar=new AlgoritmosDeOrdenamiento();
         int vector1[]={5,6,3,44,22,1);
-        int vector2[]={55,4,43,44,2,10);
+        int vector2[]={55,4,43,44,2,10,4567,638,3,0,-5,-9);
         int vector3[]={5,2,1,8,3,9,7);
         
         /*System.out.println("Arreglo Original");
@@ -49,18 +49,23 @@ public class Video51 {
                //System.out.println("arreglo original");
                //ordenar.mostrarArreglo(vector3);
                //ordenar.shell(vector3);
-                System.out.println("Arreglo vector1 original");
+                /*System.out.println("Arreglo vector1 original");
                 ordenar.mostrarArreglo(vector1);
                 System.out.println("Arreglo vector3 original");
                 ordenar.mostrarArreglo(vector3);
                 ordenar.burbuja1(vector1);
                 ordenar.burbuja1(vector3);
                 ordenar.intercalacion(vector1,vector3);
-                
-    }
+               */
+                System.out.println("Arreglo vector2 original");
+                ordenar.mostrarArreglo(vector2);
+                System.out.println("Arreglo vector2 ordenado por mezcla directa");
+                vector 2=ordenar.mezclaDirecta(vector2);
+                ordenar.mostrarArreglo(vector2);
+    } 
 }
 }
-
+ 
 
 
 
