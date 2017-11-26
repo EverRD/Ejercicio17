@@ -46,9 +46,17 @@ public class Video51 {
                        "ingresa el elemento del indice:"+i));
            ordenar.insercion()vectorcito, 1+1);
           */
-               System.out.println("arreglo original");
-               ordenar.mostrarArreglo(vector3);
-               ordenar.shell(vector3);
+               //System.out.println("arreglo original");
+               //ordenar.mostrarArreglo(vector3);
+               //ordenar.shell(vector3);
+                System.out.println("Arreglo vector1 original");
+                ordenar.mostrarArreglo(vector1);
+                System.out.println("Arreglo vector3 original");
+                ordenar.mostrarArreglo(vector3);
+                ordenar.burbuja1(vector1);
+                ordenar.burbuja1(vector3);
+                ordenar.intercalacion(vector1,vector3);
+                
     }
 }
 }

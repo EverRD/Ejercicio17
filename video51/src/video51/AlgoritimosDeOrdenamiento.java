@@ -156,6 +156,28 @@ mostrar(arreglo);
 
 }
 
+//metodo intercalacion
+public void intercalacion(int [] arregloA, int [] arregloB){
+int i, j, k;
+int arregloC[] = new int[arregloA.lengh + arregloB.lenght];
+//repetir miestras los arreglos A Y B tengan elementos que comparar
+for (i = j = k = 0; i < arregloA.lengh && j < arregloB.lengh; k++){
+if (arregloA[i] < arregloB[j]){
+arregloC[k] = arregloA[i];
+i++
+}else{
+arregloC[k]=arregloB[j];
+j++;
+}
+}
+//para añadir arreglo C los elementos del arregloA sobrantes en caso de haberlo
+for (; i < arregloA.length; i++, k++) {
+arregloC[k] = arregloA[i];
+
+
+}
+
+
 //Mostrar los datos del vector 
    public void mostrarArreglo()(int [] arreglo){
     int k;
