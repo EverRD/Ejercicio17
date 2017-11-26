@@ -172,7 +172,7 @@ j++;
 }
 //para añadir arreglo C los elementos del arregloA sobrantes en caso de haberlo
 for (; i < arregloA.length; i++, k++) {
-arregloC[k] = arregloA[i];
+arregloC[k] =arregloA[i];
 
 
 }
