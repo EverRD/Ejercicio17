@@ -38,13 +38,17 @@ public class Video51 {
           //ordenar.mostrarArreglo(vector3);
            //System.out.println("Arreglo Ordenado con quick");
            //odenar.quick(vector3, 0, vector3.length-1);
-           int team;
+           /*int team;
            tam=Integer.parseInt(JOptionPane.showInputDialog(null,"ingresa el tamaño del areglo:"));
            int vectorcito[]=new int[tam];
            for(int i=0;i<tam;i++)
                vectorcito[i]=Integer.parseInt(JOptionPane.showInputDialog(null,
                        "ingresa el elemento del indice:"+i));
            ordenar.insercion()vectorcito, 1+1);
+          */
+               System.out.println("arreglo original");
+               ordenar.mostrarArreglo(vector3);
+               ordenar.shell(vector3);
     }
 }
 }
