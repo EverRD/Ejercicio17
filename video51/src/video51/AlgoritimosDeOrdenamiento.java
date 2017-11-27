@@ -227,7 +227,98 @@ arregloIzq[i]=arreglo[i];
 return areglo;
 }
 
+//metodo mezcla Natural
+public void mezclaNatural(int arreglo[]){
+int izquierda = 0; izq = 0, derecha = arreglo.length -1, der =deerecha;
+boolean ordenado = false;
+do {
+ordenado = true;
+izquierda = 0;
+while (izquierda < derecha){
+izq=izquierda;
+while(izq<derecha && arreglo[izq]<arreglo[izq+1]){
 
+}
+der=izq+1;
+while(der==derecha-1 II der<derecha && arreglo[der]<arreglo[derecha+1]){
+der++;
+
+}
+if(der<=derecha){
+mezclaDirecta2(arreglo);
+ordenado=false;
+}
+izquierda=izq;
+
+}
+}while (!ordenado);
+}
+
+}
+//Metodo Mezcla Directa2
+public void mezclaDirecta2(int[]arreglo){
+int i, j, k;
+if (arreglo.length > 1){
+int nElementosIzq = arreglo.length / 2;
+int nEelementosDer = arreglo.length -nElementosIzq;
+int arregloIzq[] = new int[nElementosIzq];
+int arregloDer[] = new int[nElementosDer];
+//copiando los elementos de parte primera al arregloIzq
+for(i=0;i<nElementosIzq;i++){
+arregloIzq[i]=arreglo[i];
+     }
+       //copiando los elementos de parte segunda al arregloDer
+        for (i = nElementosIzq; i < nElementosIzq + nElementosDer; i++ ){
+            arregloDer[i - nElementosIzq] = arreglo[i];
+
+   }
+     //Recursividad
+     arregloIzq = mezclaDirecta(arregloIzq);
+    arregloDer = mezclaDirecta (arregloDer);
+     i = o;
+     j = o;
+     k = o;
+      while (arregloIzq.length!= j && arregloDer.length != k){
+      if (arregloIzq[j] < arregloDer[k]){
+      arreglo[i] = arregloIzq[j];
+      i++;
+      j++;
+     }else  {
+      arreglo[i] = arregloDer[k];
+     i++;
+     k++;
+
+      }
+}
+   //Arreglo Final
+    while (arregloIzq.length!= j) {
+    arreglo[i] = arregloIzq[j];
+    i++;
+     j++;
+}
+  while (arregloIzq.length!= k) {
+  arreglo[i] = arregloIzq[k];
+    i++;
+     k++;
+}
+//fin  del if 
+
+}
+
+
+//metodo de busqueda secuencial 
+public int busquedaSecuencial(int arreglo[]. int elemento){
+int i;
+boolean encontrado = false;
+for (i= 0; i < arreglo.lengh &&  encontrado ==  false; i++){
+if (elemento == arreglo[i]){
+encontrado =true;
+return i;
+
+   }
+ }
+return -1;
+ }
 
 
 //Mostrar los datos del vector 
@@ -236,7 +327,7 @@ return areglo;
     for(k=0;k<arreglo.length;k++){
         System.out.println("["+arreglo[k]+"]");
         
-    }
+    } 
     System.out.println();
     
 }

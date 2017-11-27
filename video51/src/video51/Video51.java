@@ -56,11 +56,25 @@ public class Video51 {
                 ordenar.burbuja1(vector3);
                 ordenar.intercalacion(vector1,vector3);
                */
-                System.out.println("Arreglo vector2 original");
+               /* System.out.println("Arreglo vector2 original");
                 ordenar.mostrarArreglo(vector2);
                 System.out.println("Arreglo vector2 ordenado por mezcla directa");
                 vector 2=ordenar.mezclaDirecta(vector2);
-                ordenar.mostrarArreglo(vector2);
+                ordenar.mostrarArreglo(vector2);*/
+               
+               //System.out.println("Arreglo vector2 original");
+               //ordenar.mostrarArreglo(vector2);
+               //System.out.println("Arreglo vector2 ordenado por mezcla natural");
+              // ordenar.mezclaNatural(vector2);
+               //ordenar.mostrarArreglo(vector2);
+               ordenar.mostrarArreglo(vector2);
+               int indice=ordenar.busquedaSecuencial(vector2,-9);
+               if(indice!=-1){
+                   System.Out.println("Elemento 590 encontrado en el indice "+ indice);
+               }else{
+                   System.out.println("Elemento 590 No encontrado");
+               }
+               }
     } 
 }
 }
